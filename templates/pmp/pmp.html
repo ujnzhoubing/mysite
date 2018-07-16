@@ -1,0 +1,47 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'pmp/' %}">
+</head>
+<body>
+
+<div class="col-sm-4">
+    <h2>
+        Default</h2>
+    <div id="treeview1" class="treeview">
+        <ul class="list-group">
+            <li class="list-group-item node-treeview1" data-nodeid="0" style=""><span
+                    class="expand-collapse click-collapse glyphicon glyphicon-minus"></span><span
+                    class="icon glyphicon glyphicon-stop"></span>Parent 1
+            </li>
+            <li class="list-group-item node-treeview1" data-nodeid="1" style=""><span class="indent"></span><span
+                    class="expand-collapse click-expand glyphicon glyphicon-plus"></span><span
+                    class="icon glyphicon glyphicon-stop"></span>Child 1
+            </li>
+            <li class="list-group-item node-treeview1" data-nodeid="2" style=""><span class="indent"></span><span
+                    class="expand-collapse glyphicon"></span><span class="icon glyphicon glyphicon-stop"></span>Child 2
+            </li>
+            <li class="list-group-item node-treeview1 node-selected" data-nodeid="3"
+                style="color:#FFFFFF;background-color:#428bca;"><span class="expand-collapse glyphicon"></span><span
+                    class="icon glyphicon glyphicon-stop"></span>Parent 2
+            </li>
+            <li class="list-group-item node-treeview1" data-nodeid="4" style=""><span
+                    class="expand-collapse glyphicon"></span><span class="icon glyphicon glyphicon-stop"></span>Parent 3
+            </li>
+            <li class="list-group-item node-treeview1" data-nodeid="5" style=""><span
+                    class="expand-collapse glyphicon"></span><span class="icon glyphicon glyphicon-stop"></span>Parent 4
+            </li>
+            <li class="list-group-item node-treeview1" data-nodeid="6" style=""><span
+                    class="expand-collapse glyphicon"></span><span class="icon glyphicon glyphicon-stop"></span>Parent 5
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript" src="/static/bootstrap-4.1.2-dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="/static/jquery/jquery-3.3.1.js"></script>
+</body>
+</html>
